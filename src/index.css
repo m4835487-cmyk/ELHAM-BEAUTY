@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #ffffff;
+  --bg-blush: #fff7fa;
+  --bg-surface: #fff0f5;
+  --border-rose: #f3d6e2;
+  --border-soft: #f8e6ee;
+  --ink-primary: #2a1620;
+  --ink-muted: #6e515e;
+  --rose-accent: #cc4b7c;
+  --rose-hover: #b43a69;
+  --rose-tint: #fce8f0;
+  --rose-soft-text: #9d2f5a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    overflow-x: hidden;
+  }
+
+  html[dir='rtl'] body {
+    font-family: 'Tajawal', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Cormorant Garamond', 'Tajawal', Georgia, serif;
+  }
+
+  html[dir='rtl'] .font-display {
+    font-family: 'Tajawal', 'Cormorant Garamond', sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom subtle rose scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff9fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eec7d7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc4b7c;
+}

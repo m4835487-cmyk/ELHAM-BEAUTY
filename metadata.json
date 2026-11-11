@@ -1,0 +1,6 @@
+{
+  "name": "ELHAM BEAUTY",
+  "description": "Luxury feminine perfumes, skincare, and cosmetics storefront with trilingual support (Arabic, Turkish, English) and a full-control admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
